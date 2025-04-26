@@ -24,7 +24,7 @@ export default function Home() {
   }, [controls, inView]);
 
   return (
-    <div className="m-1 p-1 bg-gradient-to-b from-transparent to-gray-100 text-gray-800">
+    <div className="bg-gradient-to-b from-transparent to-gray-100 text-gray-800">
       {/* Hero Section with Video */}
       <section className="relative h-screen w-full overflow-hidden">
         <video
@@ -44,7 +44,7 @@ export default function Home() {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="mb-4 text-5xl font-semibold tracking-tight md:text-5xl"
+              className="mb-4 text-5xl font-semibold tracking-tight md:text-5xl text-white"
             >
               Providing You With Advance
               <br />
@@ -243,6 +243,7 @@ export default function Home() {
                className="object-cover transition-transform duration-500 hover:scale-105 border border-gray-300 rounded-lg"
               />
             </motion.div>
+            
           </div>
         </div>
       </section>
@@ -426,13 +427,11 @@ export default function Home() {
             >
               <Card className="h-full">
                 <CardHeader>
-                  <CardTitle>Procurement Solutions</CardTitle>
+                  <CardTitle>Logistics & Shipping </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
-                    End-to-end procurement services for defense and security
-                    equipment, ensuring compliance with international
-                    regulations and standards.
+                  Argo Navis Global, we specialize in the seamless and secure cross-border transportation of defense-grade weaponry and munitions. Our logistics experts are well-versed in navigating complex international regulations, ensuring full compliance with global arms trade laws.
                   </p>
                 </CardContent>
               </Card>
@@ -446,13 +445,11 @@ export default function Home() {
             >
               <Card className="h-full">
                 <CardHeader>
-                  <CardTitle>Technical Consultation</CardTitle>
+                  <CardTitle>Cross-Country Operations </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
-                    Expert advice on equipment selection, deployment strategies,
-                    and integration with existing systems to maximize
-                    operational effectiveness.
+                  Argo Navis Global, we navigate the intricacies of international defense trade with unmatched expertise and strategic precision. Backed by years of experience and deep geopolitical insight, our team ensures smooth cross-border transactions through a smart, compliance-driven approach.
                   </p>
                 </CardContent>
               </Card>
@@ -466,13 +463,11 @@ export default function Home() {
             >
               <Card className="h-full">
                 <CardHeader>
-                  <CardTitle>Training Programs</CardTitle>
+                  <CardTitle>Manufacturing & Trading</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
-                    Comprehensive training on equipment operation, maintenance,
-                    and tactical deployment for military and law enforcement
-                    personnel.
+                  Argo Navis Global bridges the gap between cutting-edge military technology and those who rely on it most. We provide high-caliber weaponry, munitions, and defense systems sourced from a trusted network of renowned manufacturers. 
                   </p>
                 </CardContent>
               </Card>

@@ -7,7 +7,7 @@ import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Shield, Briefcase, GraduationCap, Wrench, Truck, FileText } from "lucide-react"
+import { Shield, Briefcase, GraduationCap, Wrench, Truck, FileText, Gift } from "lucide-react"
 
 export default function ServicesPage() {
   const controls = useAnimation()
@@ -34,7 +34,7 @@ export default function ServicesPage() {
   }
 
   return (
-    <>
+    <div className="m-1">
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px] w-full overflow-hidden">
         <Image src="/placeholder.svg?height=1080&width=1920" alt="Argo Navis Services" fill className="object-cover" />
@@ -47,16 +47,15 @@ export default function ServicesPage() {
               transition={{ duration: 0.8 }}
               className="mb-4 text-4xl font-bold tracking-tight md:text-5xl"
             >
-              Our Services
+              Your Trusted Defense Partner 
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-lg md:text-xl"
+              className="text-md md:text-lg"
             >
-              Comprehensive defense and security solutions tailored to your specific requirements. From procurement to
-              training, we provide end-to-end services to enhance your operational capabilities.
+              Argo Navis Global operates with unwavering integrity and in full compliance with international defense protocols and arms trade regulations. 
             </motion.p>
           </div>
         </div>
@@ -84,12 +83,11 @@ export default function ServicesPage() {
               <Card className="h-full">
                 <CardHeader>
                   <Briefcase className="mb-2 h-12 w-12 text-primary" />
-                  <CardTitle>Procurement Solutions</CardTitle>
+                  <CardTitle>Manufacturing & Trading </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="mb-4">
-                    End-to-end procurement services for defense and security equipment, ensuring compliance with
-                    international regulations and standards.
+                  <p className="mb-4 text-sm">
+                  Argo Navis Global bridges the gap between cutting-edge military technology and those who rely on it most. We provide high-caliber weaponry, munitions, and defense systems sourced from a trusted network of renowned manufacturers.
                   </p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Needs assessment and requirements analysis</li>
@@ -113,12 +111,11 @@ export default function ServicesPage() {
               <Card className="h-full">
                 <CardHeader>
                   <Shield className="mb-2 h-12 w-12 text-primary" />
-                  <CardTitle>Technical Consultation</CardTitle>
+                  <CardTitle>Logistics & Shipping</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="mb-4">
-                    Expert advice on equipment selection, deployment strategies, and integration with existing systems
-                    to maximize operational effectiveness.
+                  <p className="mb-4 text-sm">
+                  Argo Navis Global, we specialize in the seamless and secure cross-border transportation of defense-grade weaponry and munitions. Our logistics experts are well-versed in navigating complex international regulations, ensuring full compliance with global arms trade laws.
                   </p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Capability gap analysis</li>
@@ -141,13 +138,12 @@ export default function ServicesPage() {
             >
               <Card className="h-full">
                 <CardHeader>
-                  <GraduationCap className="mb-2 h-12 w-12 text-primary" />
-                  <CardTitle>Training Programs</CardTitle>
+                  <Gift className="mb-2 h-12 w-12 text-primary" />
+                  <CardTitle>Value-Added Services</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="mb-4">
-                    Comprehensive training on equipment operation, maintenance, and tactical deployment for military and
-                    law enforcement personnel.
+                  <p className="mb-4 text-sm">
+                  Argo Navis Global provides seamless in-house logistics and secure documentation, ensuring no reliance on third-party intermediaries. From comprehensive after-sales support to bespoke product customization, we are committed to guaranteeing that your defense assets are optimized for superior performance. 
                   </p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Equipment operation and handling</li>
@@ -174,7 +170,7 @@ export default function ServicesPage() {
                   <CardTitle>Maintenance & Support</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="mb-4">
+                  <p className="mb-4 text-sm">
                     Ongoing maintenance, repair, and technical support services to ensure optimal performance and
                     longevity of your equipment.
                   </p>
@@ -200,12 +196,11 @@ export default function ServicesPage() {
               <Card className="h-full">
                 <CardHeader>
                   <Truck className="mb-2 h-12 w-12 text-primary" />
-                  <CardTitle>Logistics & Supply Chain</CardTitle>
+                  <CardTitle>Cross-Country Operations </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="mb-4">
-                    Comprehensive logistics and supply chain management services for efficient delivery and distribution
-                    of defense equipment.
+                  <p className="mb-4 text-sm">
+                  Argo Navis Global, we navigate the intricacies of international defense trade with unmatched expertise and strategic precision. Backed by years of experience and deep geopolitical insight, our team ensures smooth cross-border transactions through a smart
                   </p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• International shipping and customs clearance</li>
@@ -232,7 +227,7 @@ export default function ServicesPage() {
                   <CardTitle>Compliance & Documentation</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="mb-4">
+                  <p className="mb-4 text-sm">
                     Expert assistance with regulatory compliance, export controls, and documentation requirements for
                     defense equipment.
                   </p>
@@ -371,6 +366,6 @@ export default function ServicesPage() {
           </motion.div>
         </div>
       </section>
-    </>
+    </div>
   )
 }
